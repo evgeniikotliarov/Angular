@@ -9,5 +9,11 @@ import {Component, Input} from '@angular/core';
 export class UsersComponent {
 
   @Input() user;
+  isMarket = false;
+
+  onClick() {
+    this.isMarket = true;
+  }
+
 }
 

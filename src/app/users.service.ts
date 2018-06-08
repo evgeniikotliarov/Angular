@@ -21,21 +21,9 @@ export class UsersService {
           return {
             name: u.name.first + ' ' + u.name.last,
             image: u.picture.large,
-            geo:u.location.city + ' ' + u.location.state + ' ' + u.location.street
+            geo: u.location.city + ' ' + u.location.state + ' ' + u.location.street
           };
         });
       });
-
   }
-
-  users = [
-    {name: 'Honda'},
-    {name: 'Toyota'},
-    {name: 'Nissan'},
-    {name: 'Suzuki'},
-    {name: 'Mitsubishi'},
-    {name: 'Mazda'},
-    {name: 'BMW'},
-    {name: 'Audi'}
-  ];
 }
